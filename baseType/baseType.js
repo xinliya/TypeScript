@@ -51,3 +51,41 @@ var colorName1 = Color2[4];
 var colorName2 = Color2[5];
 document.write(colorName1 + "<br>");
 document.write(colorName2 + "<br>");
+var Err;
+(function (Err) {
+    Err[Err["undefined"] = -1] = "undefined";
+    Err[Err["null"] = -2] = "null";
+    Err[Err["success"] = 1] = "success";
+})(Err || (Err = {}));
+;
+var e = Err.success;
+document.write(e + "<br>");
+//任意值any
+var notSure = 4;
+notSure = "maybe a string instead";
+notSure = false;
+document.write(notSure + "<br>");
+var notSureText = 4;
+// document.write(notSureText.ifItExists()+"<br>")
+document.write(notSureText.toFixed() + "<br>");
+var prettySure = 4;
+// document.write(prettySure.toFixed()+"<br>")
+var list = [1, true, "free"];
+list[3] = 100;
+document.write(list + "<br>");
+//空值 void
+var unusable = undefined;
+//Null 和 Undefined  --strictNullChecks标记是否为空值
+var n = null;
+//never
+//类型判断
+//1.<>
+var someValue = "this is a string";
+var strLength = someValue.length;
+document.write(someValue + "<br>");
+document.write(strLength + "<br>");
+//2.as
+var someValue1 = "this is a string as";
+var strLength1 = someValue.length;
+document.write(someValue1 + "<br>");
+document.write(strLength1 + "<br>");

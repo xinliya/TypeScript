@@ -49,4 +49,41 @@ var colorName2: string = Color2[5]
 document.write(colorName1+"<br>")
 document.write(colorName2+"<br>")
 
+enum Err {'undefined'=-1,'null'=-2,'success'=1};
+var e:Err=Err.success;
+document.write(e+"<br>")
 
+//任意值any
+var notSure: any = 4;
+notSure = "maybe a string instead";
+notSure = false;
+document.write(notSure+"<br>")
+
+var notSureText: any = 4;
+// document.write(notSureText.ifItExists()+"<br>")
+document.write(notSureText.toFixed()+"<br>")
+var prettySure: Object = 4;
+// document.write(prettySure.toFixed()+"<br>")
+
+var list:any[] = [1,true,"free"];
+list[3] = 100;
+document.write(list+"<br>")
+
+//空值 void
+var unusable: void = undefined;
+
+//Null 和 Undefined  --strictNullChecks标记是否为空值
+var n: null = null;
+
+//never
+//类型判断
+//1.<>
+var someValue: any = "this is a string";
+var strLength: number = (<string>someValue).length;
+document.write(someValue+"<br>")
+document.write(strLength+"<br>")
+//2.as
+var someValue1: any = "this is a string as";
+var strLength1: number = (someValue as string).length;
+document.write(someValue1+"<br>")
+document.write(strLength1+"<br>")
