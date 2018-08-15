@@ -76,6 +76,7 @@ var unusable: void = undefined;
 var n: null = null;
 
 //never
+
 //类型判断
 //1.<>
 var someValue: any = "this is a string";
@@ -84,6 +85,6 @@ document.write(someValue+"<br>")
 document.write(strLength+"<br>")
 //2.as
 var someValue1: any = "this is a string as";
-var strLength1: number = (someValue as string).length;
+var strLength1: number = (someValue1 as string).length;
 document.write(someValue1+"<br>")
 document.write(strLength1+"<br>")

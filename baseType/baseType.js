@@ -86,6 +86,6 @@ document.write(someValue + "<br>");
 document.write(strLength + "<br>");
 //2.as
 var someValue1 = "this is a string as";
-var strLength1 = someValue.length;
+var strLength1 = someValue1.length;
 document.write(someValue1 + "<br>");
 document.write(strLength1 + "<br>");
